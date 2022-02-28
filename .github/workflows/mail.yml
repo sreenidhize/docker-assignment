@@ -19,7 +19,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWD
 
-    - name: Build the docker image
+    - name: build the docker image
       run: docker build . --file Dockerfile --tag srinidhi2020/springboot
 
     - name: docker push
